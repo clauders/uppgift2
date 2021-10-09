@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+body {
+    background-color:yellowgreen;
+    white-space: normal;
+}
+
+html {
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    color: darkblue;
+}
+
+#header1 {
+    color: white;
+    text-align: center;
+}
+
+#firstpageheader {
+background-image: url(cyber.png);
+background-size: cover;
+height: 100;
+}
+
+body {
+    background-color: darkcyan;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    font-size: 2rem;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+nav a:link, nav a:visited {
+    background-color: darkblue;
+    color: white;
+}
+
+nav a:hover, nav a:active {
+    background-color: rgb(0, 0, 226);
+    color: rgb(133, 133, 133);
+}
+
+nav a.thisPage {
+    background-color: rgb(0, 0, 77)
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: darkblue;
+  }
+  
+ 
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+  div, p, figure, figcaption {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+.wrapper {
+background-color: rgb(30, 134, 168);
+padding: 20px;
+display: grid;
+grid-template-columns: 5fr 6fr 2fr 1fr;
+grid-template-rows: auto;
+grid-template-areas:
+    "fig1 fig3"
+    "fig2 fig4";
+gap: 20px;
+}
+
+figure:nth-of-type(1) {
+    grid-area: fig1;
+}
+figure:nth-of-type(2) {
+    grid-area: fig2;
+}
+figure:nth-of-type(3) {
+    grid-area: fig3;
+}
+figure:nth-of-type(4) {
+    grid-area: fig4;
+}
+
+figure, #box {
+    border: 2px solid #000000;
+    padding: 4px;
+}
+
+figure img {
+    max-width: 100%;
+}
