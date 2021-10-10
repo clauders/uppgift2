@@ -1,27 +1,12 @@
 @charset "UTF-8";
 
-body {
-    background-color:yellowgreen;
-    white-space: normal;
-}
-
 html {
     font-size: 16px;
 }
 
 h1, h2, h3 {
     color: darkblue;
-}
-
-#header1 {
-    color: white;
-    text-align: center;
-}
-
-#firstpageheader {
-background-image: url(cyber.png);
-background-size: cover;
-height: 100;
+    display: flex;
 }
 
 body {
@@ -29,6 +14,12 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    white-space: normal;
+}
+
+#wrapper2 {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
 }
 
 nav {
@@ -65,7 +56,6 @@ nav a.thisPage {
     overflow: hidden;
     background-color: darkblue;
   }
-  
  
   #navbar a {
     float: left;
@@ -114,4 +104,52 @@ figure, #box {
 
 figure img {
     max-width: 100%;
+}
+
+.boxWrap {
+    position: relative;
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.boxWrap div {
+    position: absolute;
+    border: 2px solid #000000;
+    margin: 0;
+    padding: 10px;
+    width: 200px;
+}
+
+#showbox1 ~ div {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+#showbox1:checked ~ div {
+    transform: scaleY(1);
+}
+
+#showbox2 ~ div {
+    opacity: 0;
+    transition: opacity 1s;
+}
+#showbox2:checked ~ div {
+    opacity: 1;
+}
+
+#showbox3 ~ div {
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+#showbox3:checked ~ div {
+    transform: scale(1) rotate(360deg);
+}
+
+#showbox4 ~ div {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+#showbox4:checked ~ div {
+    transform: scale(1) rotate(360deg);
 }
