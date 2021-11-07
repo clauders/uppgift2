@@ -6,7 +6,6 @@ html {
 
 h1, h2, h3 {
     color: darkblue;
-    display: flex;
 }
 
 body {
@@ -152,4 +151,20 @@ figure img {
 }
 #showbox4:checked ~ div {
     transform: scale(1) rotate(360deg);
+}
+
+@media (max-width: 500px) {
+    .navbar {
+      height: 110px;
+    }
+  
+    .navbar .flex {
+      flex-direction: column;
+    }
+    .box2{
+        max-width: 500px;
+    }
+    .box3{
+        max-width: 550px;
+    }
 }
