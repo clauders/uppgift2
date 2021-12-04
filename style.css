@@ -152,6 +152,10 @@ figure img {
 #showbox4:checked ~ div {
     transform: scale(1) rotate(360deg);
 }
+.floatimg {
+    float: left;
+    width: 500px;
+}
 
 @media (max-width: 500px) {
     .navbar {
@@ -159,12 +163,25 @@ figure img {
     }
   
     .navbar .flex {
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
     .box2{
         max-width: 500px;
     }
     .box3{
         max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .floatimg {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .floatimg {
+        display: none;
     }
 }
