@@ -21,6 +21,11 @@ body {
     grid-template-columns: 3fr 3fr;
 }
 
+#navigering {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+
 nav {
     font-size: 2rem;
 }
@@ -74,13 +79,8 @@ nav a.thisPage {
 .wrapper {
 background-color: rgb(30, 134, 168);
 padding: 20px;
-display: grid;
-grid-template-columns: 5fr 6fr 2fr 1fr;
-grid-template-rows: auto;
-grid-template-areas:
-    "fig1 fig3"
-    "fig2 fig4";
 gap: 20px;
+display: flex;
 }
 
 figure:nth-of-type(1) {
@@ -108,7 +108,7 @@ figure img {
 .boxWrap {
     position: relative;
     display: inline-block;
-    margin-right: 2em;
+    margin-right: 2em; 
 }
 
 .boxWrap div {
@@ -117,12 +117,14 @@ figure img {
     margin: 0;
     padding: 10px;
     width: 200px;
+
 }
 
 #showbox1 ~ div {
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.5s;
+
 }
 #showbox1:checked ~ div {
     transform: scaleY(1);
@@ -163,7 +165,6 @@ figure img {
     }
   
     .navbar .flex {
-        display: flex;
         flex-direction: column;
     }
     .box2{
