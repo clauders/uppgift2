@@ -21,6 +21,10 @@ body {
     grid-template-columns: 3fr 3fr;
 }
 
+#wrapper3 {
+    padding-top: 5%;
+}
+
 #navigering {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 3fr;
